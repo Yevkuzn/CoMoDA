@@ -76,13 +76,13 @@ The core of the method is model-agnostic, so the code can be modified for adapti
 ```shell
 python seqpred2eigen.py <sequence_list_file> <predictions_dir> <output_file_path>
 ``` 
-to generate inverse depths for Eigen test set.  
+&nbsp;&nbsp;to generate inverse depths for Eigen test set.  
 
-Where `<sequence_list_file>` is the path to the file containing the list of videos or sequences adaptation was performed on (e.g., [test_scenes.txt](./code/utils/test_scenes.txt));
+&nbsp;&nbsp;Where `<sequence_list_file>` is the path to the file containing the list of videos or sequences adaptation was performed on (e.g., [test_scenes.txt](./code/utils/test_scenes.txt));
 
-`<predictions_dir>`  is the directory with the predictions produced by the method;  
+&nbsp;&nbsp;`<predictions_dir>`  is the directory with the predictions produced by the method;  
 
-`<output_file_path>` is the desired path and file name for depth predictions compatible with Eigen test set (e.g., "eigen.npz"). 
+&nbsp;&nbsp;`<output_file_path>` is the desired path and file name for depth predictions compatible with Eigen test set (e.g., "eigen.npz"). 
 
 2. Run the [evaluation script from Monodepth2](https://github.com/nianticlabs/monodepth2/blob/master/evaluate_depth.py) with the file from the previous step or [eigen.npz](./eigen.npz) as an input
 
